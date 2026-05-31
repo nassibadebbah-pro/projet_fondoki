@@ -1,0 +1,840 @@
+:root{
+    --primaryColor:#320776;
+    --secondaryColor:#f6a8a8;
+    --lightColor: #0a0909;
+    --bgColor-1:#f6f6f6;
+    --bgColor-2:#c5e8f3;
+    --padding:8%;
+
+   /* --primaryColor:#9ac1f3;
+    --secondaryColor:#3b168a;
+    --lightColor: #ffffff;
+    --bgColor-1:#300d3f;
+    --bgColor-2:#3b436a;
+    --padding:8%;*/
+}
+
+*{
+    margin:10;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{ 
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 16px;
+    color: var(--lightColor);
+}
+
+span{
+    color: var(--primaryColor);
+}
+nav{
+   
+   padding: top 2.8rem;
+   padding-left: var(--padding);
+   padding-right: var(--padding);
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    margin: 0.8rem 1.5rem;
+}
+nav ul li a{
+  font-size: 1.3rem;
+    color:var(--lightColor);
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: 0.4s;
+    cursor: pointer;
+}
+nav ul li a:hover{
+    color: var(--primaryColor);
+}
+.btn{
+    background-color: var(--primaryColor);
+    color:white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.81rem 1.87rem;
+    border-radius: 30px;
+    border: 2px solid transparent;
+    transition: 0.4s;
+    cursor: pointer;
+}
+.btn:hover{
+  color:#000000;
+    background-color:transparent ;
+    border: 2px solid var(--primaryColor);
+}
+h1{
+    font-size: 4.65rem;
+    margin: 1.7rem 0;
+}
+h2{
+  font-size: 2.2rem;
+}
+h3{
+    font-size: 1.5rem;
+  
+}
+h4{
+    font-size: 1.25rem;
+    color: var(--secondaryColor);
+}
+h5{
+    font-size: 1.37rem;
+  
+    
+}
+p{
+    color: black;
+    
+    line-height: 1.7rem;
+    font-size: 1rem;
+}
+/*-----------------------------------------------------------------
+ ----------------------------home section-------------------------
+ ------------------------------------------------------------------*/
+.home{
+    width: 100%;
+    height: 100vh;
+    background-color: var(--bgColor-1);
+    display: flex;
+    flex-direction: column;
+}
+.home1{
+    width: 100%;
+    height: 25vh;
+    background-color: var(--bgColor-1);
+    display: flex;
+    flex-direction: column;
+}
+
+.search1{
+    width: 300px;;
+    height: 45px;
+    border-radius: 34px;
+    padding-left: 7px;
+    text-align: right;
+  }
+   .home .container-images{
+        width: 50%;
+        height: 90%; 
+        position:relative;
+        align-self: flex-end;
+    }
+    .home .container-images img{
+      position:absolute;
+      bottom: 0;
+      height: 100%; 
+      left: 50%; 
+      transform: translateX(-50%);
+      transition: bottom 1s,left 1s;
+    }
+    .home .container-images:hover.shape{
+      bottom: 40px;  
+    }
+    .home.container-images:hover.pic{
+     left: 45%;   
+    }
+/*-----------------------------------------------------------------
+----------------------------DATE_TIME section-------------------------
+------------------------------------------------------------------*/
+.datetime {
+  font-size: 7px;
+  padding: 14px;
+  background: transparent;
+  width: 170px;
+}
+
+.time {
+  font-size: 2em;
+  color: #052b46;
+}
+
+.date {
+  margin-top: 12px;
+  font-size: 2em;
+  color: #320776;
+} 
+    
+/*-----------------------------------------------------------------
+----------------------------content section-------------------------
+------------------------------------------------------------------*/
+.content{
+flex-grow: 1;
+padding: 0 var(--padding);
+display: flex;
+align-items: center;
+}
+.container-texts{
+    position: relative;
+    bottom: 5px;
+}
+
+.social a{
+  text-decoration:none;
+}
+.social img{
+    margin-right:2rem;
+    width: 2.5rem;
+    transition: 0.4s;
+}
+.social img:hover{
+    transform: scale(1.2);
+}
+.content input[type="text"]{
+  width: 250px;
+  height: 30px;
+}
+.content input[type="email"]{
+  width: 200px;
+  height: 30px;
+}
+.content input[type="submit"]{
+  width: 50px;
+  height: 30px;
+  background: var(--primaryColor);
+  
+}
+content table .tab{
+  border:0;
+  width: 100%;
+  box-shadow: none;
+}
+  
+    /*-----------------------------------------------------------------
+    ----------------------------about section-------------------------
+    ------------------------------------------------------------------*/
+    .about{
+
+        background-color: var(--bgColor-2);
+        padding: 2rem var(--padding);
+        display: flex;
+       align-items: center;
+        justify-content: space-evenly;
+    }
+    .about input{
+      width: 200px;
+    }
+    
+    .about .container-texts{
+        width: 50%;
+    }
+   .about iframe{
+      width:50%;
+     height: 300px;
+      border:0;
+    }
+
+     /*-----------------------------------------------------------------
+    ----------------------------SERVICE SECTION-------------------------
+    ------------------------------------------------------------------*/
+    .services{
+     background-color: var(--bgColor-1);
+     padding: 1rem ;
+     
+     text-align: center;
+    }
+    .text-center{
+      text-align: center;
+      
+    }
+    .services img{
+      width:200px;
+     padding: 0rem 0rem;
+    }
+    .box{
+      display: flex;
+      justify-content: space-between;
+      column-gap: 1rem;
+    }
+    .card{
+        width: 250px;
+       border: 4px solid var(--primaryColor);
+        border-radius: 20px;
+        padding: 1rem 0.5rem;
+        text-align: center;
+        
+    }
+
+    .card1{
+      width: 1000px;
+      height: 200px;
+     
+     border: 2px solid var(--lightColor);
+     padding: 1.3rem 2rem;
+      text-align: center;
+      
+  }
+    .card p{
+    line-height: 0rem;
+    padding-bottom: 1rem;
+    }
+    .hotel{
+     width:100%;
+      height:auto;
+      background-color:var(--bgColor-2);
+      border-radius: 15px;
+      text-align: center;
+      display: flex;
+      padding: 1.3rem 2rem;
+      justify-content: space-between;
+  }
+  .hotel iframe{
+    padding: 1.3rem 2rem;
+    width: 30%;
+    height:90%;
+    border:0;
+  }
+
+    .prix{
+        width: 15%;
+        height: 60%;
+        text-align: center;
+        
+        padding: 0.81rem 1.87rem;
+    }
+    
+   
+   
+    /*-----------------------------------------------------------------
+    ----------------------------skills section-------------------------
+    ------------------------------------------------------------------*/
+    .skills{
+        background-color: var(--bgColor-2);
+        padding: 2rem var(--padding);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 200px;
+            }
+      
+          .skills img{
+            width: 30px; 
+          }
+          .skills .tel{
+            display: flex; 
+            margin:0 1rem 1rem 0 ;
+            flex-direction:row;
+            text-align: center;
+           }
+          .skills .tel1{
+          margin:0 4rem 1rem 0 ;
+          }
+   /*-----------------------------------------------------------------
+    ----------------------------FOOTER -------------------------------
+    ------------------------------------------------------------------*/
+         footer{
+            padding: 0rem var(--padding);
+            background-color: var(--bgColor-1);
+            text-align: center;
+          }
+     
+/*-----------------------------------------------------------------
+----------------------------FORM-CONTAINER------------------------
+------------------------------------------------------------------*/
+
+          .form-container{
+          
+            display: none;
+            position:fixed;
+            align-items: center;
+            justify-content: center;
+            padding:20%;
+            padding-bottom: 60px;
+            z-index: 1;
+            padding-top: 100px;
+            top: 0;
+            overflow: auto;
+            background:transparent;
+            -webkit-animation-name: animatetop;
+            -webkit-animation-duration: 0.4s;
+            animation-name: animatetop;
+            animation-duration: 0.4s
+        }
+        @-webkit-keyframes animatetop {
+            from {top:-300px; opacity:0}
+            to {top:0; opacity:1}
+        }
+        @keyframes animatetop {
+            from {top:-300px; opacity:0}
+            to {top:0; opacity:1}
+        }
+         
+         .form-container .rad{
+         display: inline;
+         }
+         
+         .form-container form{
+            padding:20px;
+            border-radius: 5px;
+            box-shadow: 0 5px 10px rgba(0,0,0,.1);
+            background:white;
+            text-align: center;
+            width: 500px;
+         }
+         
+         .form-container form h3{
+            font-size: 30px;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+            color:#333;
+         }
+         
+         .form-container form input,
+         .form-container form select{
+          width: 100%;
+          padding:10px 15px;
+          font-size: 17px;
+          margin:8px 0;
+          border-radius: 5px;
+       }
+       
+       
+       .form-container form p{
+          margin-top: 10px;
+          font-size: 20px;
+          color:#333;
+       }
+       
+       .form-container form p a{
+          color:var(--primaryColor);
+          cursor: pointer;
+       }
+       
+       .form-container form .error-msg{
+          margin:10px 0;
+          display: block;
+          background: crimson;
+          color:#fff;
+          border-radius: 5px;
+          font-size: 20px;
+          padding:10px;
+       }
+/*-----------------------------------------------------------------
+----------------------------HUMBERGER MENU-------------------------
+------------------------------------------------------------------*/
+
+
+
+#menu{
+  display: none;
+  position: relative;
+  appearance: none;
+  border: none;
+  outline: none;
+  background: none;
+  cursor: pointer;
+  user-select: none;
+}
+#menu span{
+  display: block;
+  width: 33px;
+  height: 4px;
+  background-color: var(--lightColor);
+  border-radius: 6px;
+  transform-origin: 0 0;
+  transition: 0.4s;
+  margin-bottom: 5px;
+}
+
+#menu.is-active span:nth-child(1){
+  transform: translate(0px,-2px) rotate(45deg);
+}
+#menu.is-active span:nth-child(2){
+  opacity: 0;
+  transform: translateX(15px);
+}
+#menu.is-active span:nth-child(3){
+  transform: translate(-3px,3px) rotate(-45deg);
+}
+#menu.is-active span {
+  background-color: var(--primaryColor);
+}
+
+/*-----------------------------------------------------------------
+----------------------------resertvation-------------------------
+------------------------------------------------------------------*/
+
+header{
+  display:none;
+  position:fixed;
+  align-items: center;
+  justify-content: center;
+  padding:20%;
+  padding-bottom: 60px;
+  z-index: 1;
+  padding-top: 50px;
+  top: 0;
+  overflow: auto;
+  background:transparent;
+  -webkit-animation-name: animate;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animate;
+  animation-duration: 0.4s
+
+}
+@-webkit-keyframes animate {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+@keyframes animate {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+
+.reservation{
+  background:white;
+  max-width: 800px;
+  min-height: 500px;
+  display:block;
+  justify-content: space-between; 
+ }
+.left{
+flex-basis: 50%;
+}
+.right{
+  flex-basis: 50%;
+  
+}
+
+.reservation form{
+  padding: 1rem;
+
+}
+.reservation .res{
+  display: flex;
+  margin-left: 1rem;
+  column-gap: 1rem;
+}
+
+.reservation form input{
+  width:100%;
+  padding: 0.5rem 0.7rem;
+  margin: 0.5rem 0;
+  outline: none;
+}
+
+
+#zip{
+  display:flex;
+  margin-top: 0.5rem;
+  justify-content: space-between;
+}
+#zip select{
+  padding: 0.5rem 0.7rem;
+  margin-top: 7px;
+}
+#zip input[type="number"]{
+  padding: 0.5rem 0.7rem;
+  margin-left: 5px; 
+}
+
+  #zip input[type="number"]{
+    padding: 0.5rem 0.7rem;
+    margin-left: 5px; 
+  }
+  .reservation input[type="submit"]{
+    width:50% ;
+    padding: 0.5rem 1.5rem;
+    background:var(--primaryColor);
+    color: white;
+    border: none;
+    outline: none;
+    margin-top: 1rem;
+    cursor: pointer;
+  }
+  
+  .reservation input[type="submit"]:hover{
+    background-color:transparent ;
+    border: 2px solid var(--primaryColor);
+    color:#000000;
+    
+}
+
+/*-----------------------------------------------------------------
+-----------------------------TABLE SECTION ------------------------
+------------------------------------------------------------------*/
+
+.table{
+  padding: 2rem var(--padding);
+text-align: center;
+
+}
+.table table {
+  margin-right: 2rem;
+  margin: 1.5rem 2rem;
+  text-align: center;
+  border-collapse: collapse;
+  width: 100%;}
+ 
+.table tr:hover{
+  background:#babbf0;
+}
+
+.table th {
+  border: 1px solid black;
+  padding: 8px;
+}
+.table td {
+  border: 1px solid black;
+  padding: 8px;
+}
+
+.table th {
+  background-color:var(--primaryColor);
+  color:white;
+}
+
+.table tr:nth-child(even) {
+  background-color:#b0e3fd;
+}
+.table input[type="submit"]{
+  width: 300px;
+  height: 30px;
+  background:var(--primaryColor);
+  color: white;
+  cursor: pointer;
+}
+.table input[type="reset"]{
+  width: 300px;
+  height: 30px;
+  background:var(--primaryColor);
+  color: white;
+  cursor: pointer;
+}
+.table input[type="submit"]:hover{
+  background-color:transparent ;
+  border: 2px solid var(--primaryColor);
+  color:#000000;}
+  .table input[type="reset"]:hover{
+    background-color:transparent ;
+    border: 2px solid var(--primaryColor);
+    color:#000000;}
+/*-----------------------------------------------------------------
+----------------------------cart_reser -------------------------
+------------------------------------------------------------------*/
+
+    .cartRes{
+     display: block;
+      align-items: center;
+      justify-content: center;
+      padding:30%;
+      padding-bottom: 60px;
+      
+      position:fixed;
+       z-index: 1;
+      padding-top: 50px;
+      top: 0;
+      overflow: auto;
+      background:transparent;
+      -webkit-animation-name: animate;
+      -webkit-animation-duration: 0.4s;
+      animation-name: animate;
+      animation-duration: 0.4s
+    
+    }
+      .cartRes form{
+      padding:2rem 2rem 2rem;
+      box-shadow: 0 5px 10px rgba(0,0,0,.1);
+      background:white;
+      text-align:right;
+       width: 400px;
+     
+
+   }
+   td {
+    padding: 8px;
+  }
+
+
+/*-----------------------------------------------------------------
+----------------------------MESSAGE POPUP-------------------------
+------------------------------------------------------------------*/
+.popup {
+  display: none; /* يتم إخفاء النافذة افتراضيًا */
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #f1f1f1;
+  border: 1px solid #ccc;
+  padding: 20px;
+  z-index: 9999;
+}
+
+
+/*-----------------------------------------------------------------
+----------------------------MEDIA QUERIES-------------------------
+------------------------------------------------------------------*/
+ 
+@media only screen and (max-width:575px) {
+
+ :root {
+    --padding:1.5rem;
+  }
+  html {
+    font-size: 13px;
+  }
+  .home .container-images{
+    display: none;
+  }
+  .home{
+    width: 100%;
+  }
+  nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 82px;
+    padding-top:0 ;
+    background-color: var(--bgColor-1);
+    border-bottom: 1px solid var(--bgcolor-2);
+    z-index: 100;
+  }
+ 
+  nav ul{
+    display: none;
+    position: fixed ;
+    top: 0;
+    left: 0;
+     background: white;
+  }
+  nav ul.is-active{
+    display: block;
+  }
+  nav ul li{
+    display: block;
+    text-align: center;
+    margin: 50px;
+  }
+  nav ul li a:hover{
+    color: var(--primaryColor);
+    border: none;
+  padding: 0;
+  }
+  .btn{
+    background-color: var(--primaryColor);
+    color:white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.6rem 1rem;
+    border-radius: 30px;
+    border: 2px solid transparent;
+    transition: 0.4s;
+}
+  .container-texts{
+    bottom: 0rem;
+  }
+  
+  .social{
+    margin-top: 70px;
+    
+  }
+  h3{
+    margin-bottom: 70px;
+  }
+  #menu {
+    display: block;
+  }
+ .about{
+  flex-wrap: wrap;
+ }
+  .about .container-texts{
+    width: 100%;
+  }
+  .about .container-texts input{
+    width:60%;
+  }
+  .about iframe{
+    width: 100%;}
+  
+.dof a .plus{
+  display: block;
+}
+  .box{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 1rem 3rem;
+  }
+  .skills{
+   display: inline;
+  }
+  .skills .tel{
+    display: flex;
+   flex-wrap: nowrap;
+   }
+   .skills .tel1{
+    flex: 0 0 auto;
+    margin: 10px;
+   }
+   .skills img{
+    width: 20px; 
+  }
+   .skills .tel h3{
+    font-size: smaller;
+   
+   }
+  
+ 
+  .hotel{
+    width: 100%;
+    height: 100px;
+  }
+ 
+ .hotel iframe{
+   width: 120px;
+   height:100%;
+   padding: 1rem 0.7rem;
+   border:0;
+ }
+ .services .hotel img{
+  width: 120px;
+  padding: 1rem 0.7rem;
+ }
+ 
+ .services .hotel a{
+  width: 20px;
+  height: 10px;
+  border-radius: 20%;
+}
+.services .hotel div h5{
+  line-height:0.9rem;
+  font-size: 1rem;
+    margin-bottom: 0.6rem;
+    padding:0rem 0rem;
+}
+.services .hotel div p{
+  line-height:0.9rem;
+  width: 100px;;
+  font-size: 0.7rem;
+  padding: 0rem 0rem;
+}
+ 
+.reservation{
+flex-direction: column;
+border-bottom: #0a0909;
+border-color: #06abc5;
+}
+.skills .tel{
+  flex-direction: column;
+  text-align: center;
+  padding: 0rem 0rem ;
+}
+.card1{
+  width: 350px;
+
+}
+.card1 input[type="text"]{
+  width:200px;
+
+}
+
+} 
