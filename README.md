@@ -6,15 +6,16 @@ While currently optimized with live database templates for *Hotel Kerdada*, the 
 
 ---
 
-## 🚀 Core Platform Modules & Windows
+##  Core Platform Modules & Windows
 
 ### 1. Reception Desk Dashboard (`pagFondoki.php`)
 * Acts as the main command center for hotel receptionists.
 * Features live dynamic counters fetching real-time room availability based on current-date server state metrics.
 * Offers direct navigation to specialized room management ledgers and general inventory lookups.
+
 <img src="screenshots/HOME.png" alt="HOME Dashboard" width="600px">
-### 2. Smart Booking & Reservation Matrix (`chambre.php`, `chambr2.php`, `chambr3.php`)
-* Dedicated control windows for managing **Single**, **Double**, and **Triple** occupancy rooms.
+
+### 2. Smart Booking & Reservation Matrix
 * Integrated with a strict mathematical algorithmic calendar query that prevents double-bookings or overlapping guest timelines.
 * Automated color-coded warning systems alerting staff of checking-out guests when time remaining hits critical thresholds ($\le 1$ Day).
 
@@ -30,7 +31,7 @@ While currently optimized with live database templates for *Hotel Kerdada*, the 
 
 ---
 
-## 🛠️ Tech Stack & Security Framework
+##  Tech Stack & Security Framework
 * **Frontend:** Clean Semantic HTML5, CSS3 Component Architecture, Responsive Layout Viewports, Dynamic Native JavaScript (`date.js`).
 * **Backend:** Native PHP (Procedural & OOP DB Interaction logic).
 * **Database Management:** MySQL relational structures.
@@ -38,7 +39,7 @@ While currently optimized with live database templates for *Hotel Kerdada*, the 
 
 ---
 
-## 💻 Local Installation & Setup Guide
+##  Local Installation & Setup Guide
 
 ### Prerequisites
 Ensure you have a local server deployment stack installed, such as **XAMPP** or **WAMP**.
@@ -46,4 +47,4 @@ Ensure you have a local server deployment stack installed, such as **XAMPP** or 
 ### Step-by-Step Deployment
 1. Clone this repository into your server deployment root folder (e.g., `C:/xampp/htdocs/`):
    ```bash
-   git clone [https://github.com/YOUR_USERNAME/Fondoki-Hotel-Management.git](https://github.com/YOUR_USERNAME/Fondoki-Hotel-Management.git)
+   git clone [https://github.com/nassibadebbah-pro/projet_fondoki.git](https://github.com/nassibadebbah-pro/projet_fondoki.git)
